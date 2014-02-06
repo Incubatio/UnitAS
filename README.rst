@@ -18,7 +18,7 @@ Installation
 
 Tips:
 ~~~~
-You might want to disable the flash debugger dialog by adding SuppressDebuggerExceptionDialogs=1 in your mm.cfg.
+You might want to disable the flash debugger dialog by adding ``SuppressDebuggerExceptionDialogs=1`` in your mm.cfg.
 
 Commands
 ========
@@ -32,15 +32,17 @@ Note: *When test are runned, output will be in your flashlog.txt file. You can c
 
 Example
 =======
-``UnitAS.test("Test from space", function(assert:Function):void {
 
-  // Your tests here
-  var expected:uint = 1;
-  var actual:uint = 1;
+::
+  UnitAS.test("Test from space", function(assert:Function):void {
 
-  // success example
-  assert(expected, actual);
-}``
+    // Your tests here
+    var expected:uint = 1;
+    var actual:uint = 1;
+
+    // success example
+    assert(expected, actual);
+  }
 
 
 Folder architecture
